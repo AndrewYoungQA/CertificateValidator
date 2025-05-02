@@ -1,0 +1,425 @@
+{
+  "startTime": "2024-04-24T13:32:12.876Z",
+  "endTime": "2024-04-24T13:34:12.003Z",
+  "userAgents": [
+    "Chrome 124.0.6367.61 / Windows 10"
+  ],
+  "passed": 14,
+  "total": 22,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "CustomerOfferPortal : prod - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://CustomerOfferPortal.brinkshome.com",
+          "meta": {
+            "env": "prod"
+          },
+          "errs": [],
+          "durationMs": 10306,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "CustomerOfferPortal : stg - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://CustomerOfferPortalstg.brinkshome.com",
+          "meta": {
+            "env": "stg"
+          },
+          "errs": [],
+          "durationMs": 5860,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "CustomerOfferPortal : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://CustomerOfferPortalsit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 1099,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "CustomerOfferPortal : dev - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://CustomerOfferPortalDEV.brinkshome.com",
+          "meta": {
+            "env": "dev"
+          },
+          "errs": [],
+          "durationMs": 4357,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "DispatchCustomerApp : prod - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://Selfservice.brinkshome.com",
+          "meta": {
+            "env": "prod"
+          },
+          "errs": [],
+          "durationMs": 5595,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "DispatchCustomerApp : stg - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://Selfservicestg.brinkshome.com",
+          "meta": {
+            "env": "stg"
+          },
+          "errs": [],
+          "durationMs": 6225,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "DispatchCustomerApp : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://Selfservicesit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 7265,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "DispatchCustomerApp : dev - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://Selfservicedev.brinkshome.com",
+          "meta": {
+            "env": "dev"
+          },
+          "errs": [],
+          "durationMs": 5643,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "eContract : prod - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://econtract.brinkshome.com",
+          "meta": {
+            "env": "prod"
+          },
+          "errs": [],
+          "durationMs": 8375,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "eContract : stg - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://econtractstg.brinkshome.com",
+          "meta": {
+            "env": "stg"
+          },
+          "errs": [
+            "AssertionError: Certificate issuer is not the expected value.: expected 'Amazon' to deeply equal 'GoDaddy.com, Inc.'\n\n+ expected - actual\n\n-Amazon\n+GoDaddy.com, Inc.\n\n\nBrowser: Chrome 124.0.6367.61 / Windows 10\n\n   57 |        console.log(`Valid to: ${formattedValidToDate}`);\n   58 |        \n   59 |\n   60 |        // Assert issuer is the expected value\n   61 |        const expectedIssuer = 'GoDaddy.com, Inc.';\n > 62 |        await t.expect(issuer).eql(expectedIssuer, 'Certificate issuer is not the expected value.');\n   63 |\n   64 |        // Assert valid from date\n   65 |        const expectedValidFromDate = new Date('2023-06-27T17:11:10Z').getTime();\n   66 |        await t.expect(validFromDate.getTime()).eql(expectedValidFromDate, 'Certificate valid from date does not match expected date.');\n   67 |\n\n   at <anonymous> (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:62:32)\n   at asyncGeneratorStep (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:114)\n   at _next (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:452)"
+          ],
+          "durationMs": 6807,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "eContract : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://econtractsit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [
+            "AssertionError: Certificate issuer is not the expected value.: expected 'Amazon' to deeply equal 'GoDaddy.com, Inc.'\n\n+ expected - actual\n\n-Amazon\n+GoDaddy.com, Inc.\n\n\nBrowser: Chrome 124.0.6367.61 / Windows 10\n\n   57 |        console.log(`Valid to: ${formattedValidToDate}`);\n   58 |        \n   59 |\n   60 |        // Assert issuer is the expected value\n   61 |        const expectedIssuer = 'GoDaddy.com, Inc.';\n > 62 |        await t.expect(issuer).eql(expectedIssuer, 'Certificate issuer is not the expected value.');\n   63 |\n   64 |        // Assert valid from date\n   65 |        const expectedValidFromDate = new Date('2023-06-27T17:11:10Z').getTime();\n   66 |        await t.expect(validFromDate.getTime()).eql(expectedValidFromDate, 'Certificate valid from date does not match expected date.');\n   67 |\n\n   at <anonymous> (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:62:32)\n   at asyncGeneratorStep (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:114)\n   at _next (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:452)"
+          ],
+          "durationMs": 8605,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "eContract : dev - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://econtractdev.brinkshome.com",
+          "meta": {
+            "env": "dev"
+          },
+          "errs": [
+            "AssertionError: Certificate issuer is not the expected value.: expected 'Amazon' to deeply equal 'GoDaddy.com, Inc.'\n\n+ expected - actual\n\n-Amazon\n+GoDaddy.com, Inc.\n\n\nBrowser: Chrome 124.0.6367.61 / Windows 10\n\n   57 |        console.log(`Valid to: ${formattedValidToDate}`);\n   58 |        \n   59 |\n   60 |        // Assert issuer is the expected value\n   61 |        const expectedIssuer = 'GoDaddy.com, Inc.';\n > 62 |        await t.expect(issuer).eql(expectedIssuer, 'Certificate issuer is not the expected value.');\n   63 |\n   64 |        // Assert valid from date\n   65 |        const expectedValidFromDate = new Date('2023-06-27T17:11:10Z').getTime();\n   66 |        await t.expect(validFromDate.getTime()).eql(expectedValidFromDate, 'Certificate valid from date does not match expected date.');\n   67 |\n\n   at <anonymous> (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:62:32)\n   at asyncGeneratorStep (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:114)\n   at _next (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:452)"
+          ],
+          "durationMs": 6957,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "RealTimeEvents : prod - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://RealTimeEvents.brinkshome.com",
+          "meta": {
+            "env": "prod"
+          },
+          "errs": [],
+          "durationMs": 2866,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "RealTimeEvents : stg - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://realtimeeventsstg.brinkshome.com",
+          "meta": {
+            "env": "stg"
+          },
+          "errs": [],
+          "durationMs": 2892,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "RealTimeEvents : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://realtimeeventssit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 1913,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Retention : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "http://retentionuisit/",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [
+            "TypeError [ERR_INVALID_PROTOCOL]: Protocol \"http:\" not supported. Expected \"https:\"\n\nBrowser: Chrome 124.0.6367.61 / Windows 10"
+          ],
+          "durationMs": 1097,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Retention : stg - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "http://retentionuistg/",
+          "meta": {
+            "env": "stg"
+          },
+          "errs": [
+            "TypeError [ERR_INVALID_PROTOCOL]: Protocol \"http:\" not supported. Expected \"https:\"\n\nBrowser: Chrome 124.0.6367.61 / Windows 10"
+          ],
+          "durationMs": 1179,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Retention : prod - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "http://retentionui/",
+          "meta": {
+            "env": "prod"
+          },
+          "errs": [
+            "TypeError [ERR_INVALID_PROTOCOL]: Protocol \"http:\" not supported. Expected \"https:\"\n\nBrowser: Chrome 124.0.6367.61 / Windows 10"
+          ],
+          "durationMs": 3932,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "On-Boarding Activation : prod - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://activate.brinkshome.com",
+          "meta": {
+            "env": "prod"
+          },
+          "errs": [
+            "AssertionError: Certificate issuer is not the expected value.: expected 'DigiCert, Inc.' to deeply equal 'GoDaddy.com, Inc.'\n\n+ expected - actual\n\n-DigiCert, Inc.\n+GoDaddy.com, Inc.\n\n\nBrowser: Chrome 124.0.6367.61 / Windows 10\n\n   57 |        console.log(`Valid to: ${formattedValidToDate}`);\n   58 |        \n   59 |\n   60 |        // Assert issuer is the expected value\n   61 |        const expectedIssuer = 'GoDaddy.com, Inc.';\n > 62 |        await t.expect(issuer).eql(expectedIssuer, 'Certificate issuer is not the expected value.');\n   63 |\n   64 |        // Assert valid from date\n   65 |        const expectedValidFromDate = new Date('2023-06-27T17:11:10Z').getTime();\n   66 |        await t.expect(validFromDate.getTime()).eql(expectedValidFromDate, 'Certificate valid from date does not match expected date.');\n   67 |\n\n   at <anonymous> (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:62:32)\n   at asyncGeneratorStep (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:114)\n   at _next (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:452)"
+          ],
+          "durationMs": 5149,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "On-Boarding Activation : stg - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://activate-staging.brinkshome.com",
+          "meta": {
+            "env": "stg"
+          },
+          "errs": [],
+          "durationMs": 4325,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "On-Boarding Activation : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://activate-qa.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 5822,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "On-Boarding Activation : dev - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://activate-dev.brinkshome.com",
+          "meta": {
+            "env": "dev"
+          },
+          "errs": [
+            "AssertionError: Certificate issuer is not the expected value.: expected 'DigiCert, Inc.' to deeply equal 'GoDaddy.com, Inc.'\n\n+ expected - actual\n\n-DigiCert, Inc.\n+GoDaddy.com, Inc.\n\n\nBrowser: Chrome 124.0.6367.61 / Windows 10\n\n   57 |        console.log(`Valid to: ${formattedValidToDate}`);\n   58 |        \n   59 |\n   60 |        // Assert issuer is the expected value\n   61 |        const expectedIssuer = 'GoDaddy.com, Inc.';\n > 62 |        await t.expect(issuer).eql(expectedIssuer, 'Certificate issuer is not the expected value.');\n   63 |\n   64 |        // Assert valid from date\n   65 |        const expectedValidFromDate = new Date('2023-06-27T17:11:10Z').getTime();\n   66 |        await t.expect(validFromDate.getTime()).eql(expectedValidFromDate, 'Certificate valid from date does not match expected date.');\n   67 |\n\n   at <anonymous> (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:62:32)\n   at asyncGeneratorStep (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:114)\n   at _next (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:452)"
+          ],
+          "durationMs": 5289,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}

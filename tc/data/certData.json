@@ -1,0 +1,156 @@
+[
+    {
+        "app": "CustomerOfferPortal",
+        "url": "https://CustomerOfferPortal.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WPZ1WEB02", "WPZ1WEB03"],
+        "env": "prod"
+    },
+    {
+        "app": "CustomerOfferPortal",
+        "url": "https://CustomerOfferPortalstg.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WPZ2WEB01", "WPZ2WEB02"],
+        "env": "stg"
+    },
+    {
+        "app": "CustomerOfferPortal",
+        "url": "https://CustomerOfferPortalsit.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WPZ2WEB01", "WPZ2WEB02"],
+        "env": "sit"
+    },
+    {
+        "app": "CustomerOfferPortal",
+        "url": "https://CustomerOfferPortalDEV.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WP4WEB01", "WP4WEB02"],
+        "env": "dev"
+    },
+    {
+        "app": "DispatchCustomerApp",
+        "url": "https://Selfservice.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WPZ1WEB02", "WPZ1WEB03"],
+        "env": "prod"
+    },
+    {
+        "app": "DispatchCustomerApp",
+        "url": "https://Selfservicestg.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WPZ2WEB01", "WPZ2WEB02"],
+        "env": "stg"
+    },
+    {
+        "app": "DispatchCustomerApp",
+        "url": "https://Selfservicesit.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WPZ2WEB01", "WPZ2WEB02"],
+        "env": "sit"
+    },
+    {
+        "app": "DispatchCustomerApp",
+        "url": "https://Selfservicedev.brinkshome.com",
+        "owner": "Rogue One",
+        "server": ["WP4WEB01", "WP4WEB02"],
+        "env": "dev"
+    },
+    {
+        "app": "eContract",
+        "url": "https://econtract.brinkshome.com",
+        "owner": "Pain Killers",
+        "server": ["WPZ1WEB02", "WPZ1WEB03"],
+        "env": "prod"
+    },
+    {
+        "app": "eContract",
+        "url": "https://econtractstg.brinkshome.com",
+        "owner": "Pain Killers",
+        "server": ["WPZ2WEB01", "WPZ2WEB02"],
+        "env": "stg"
+    },
+    {
+        "app": "eContract",
+        "url": "https://econtractsit.brinkshome.com",
+        "owner": "Pain Killers",
+        "server": ["WP3WEB01", "WP3WEB02"],
+        "env": "sit"
+    },
+    {
+        "app": "eContract",
+        "url": "https://econtractdev.brinkshome.com",
+        "owner": "Pain Killers",
+        "server": ["WP4WEB01", "WP4WEB02"],
+        "env": "dev"
+    },
+    {
+        "app": "RealTimeEvents",
+        "url": "https://RealTimeEvents.brinkshome.com",
+        "owner": "Ziglar",
+        "server": ["WPZ1WEB02", "WPZ1WEB03"],
+        "env": "prod"
+    },
+    {
+        "app": "RealTimeEvents",
+        "url": "https://realtimeeventsstg.brinkshome.com",
+        "owner": "Ziglar",
+        "server": ["WPZ2WEB01", "WPZ2WEB02"],
+        "env": "stg"
+    },
+    {
+        "app": "RealTimeEvents",
+        "url": "https://realtimeeventssit.brinkshome.com",
+        "owner": "Ziglar",
+        "server": ["WPZ2WEB01", "WPZ2WEB02"],
+        "env": "sit"
+    },
+    {
+        "app": "Retention",
+        "url": "http://retentionuisit/",
+        "owner": "GreenForce",
+        "server": ["WP3WEB01"],
+        "env": "sit"
+    },
+    {
+        "app": "Retention",
+        "url": "http://retentionuistg/",
+        "owner": "GreenForce",
+        "server": ["WP2WEB01"],
+        "env": "stg"
+    },
+    {
+        "app": "Retention",
+        "url": "http://retentionui/",
+        "owner": "GreenForce",
+        "server": ["WP1WEB01"],
+        "env": "prod"
+    },
+    {
+        "app": "On-Boarding Activation",
+        "url": "https://activate.brinkshome.com",
+        "owner": "CBS",
+        "server": ["app-onboardingactivation-prod-01"],
+        "env": "prod"
+    },
+    {
+        "app": "On-Boarding Activation",
+        "url": "https://activate-staging.brinkshome.com",
+        "owner": "CBS",
+        "server": ["app-onboardingactivation-stg-01"],
+        "env": "stg"
+    },
+    {
+        "app": "On-Boarding Activation",
+        "url": "https://activate-qa.brinkshome.com",
+        "owner": "CBS",
+        "server": ["app-onboardingactivation-sit-01"],
+        "env": "sit"
+    },
+    {
+        "app": "On-Boarding Activation",
+        "url": "https://activate-dev.brinkshome.com",
+        "owner": "CBS",
+        "server": ["app-onboardingactivation-dev-01"],
+        "env": "dev"
+    }
+]

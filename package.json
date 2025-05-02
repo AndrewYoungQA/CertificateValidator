@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "testcafe": "^3.0.1",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "scripts": {
+    "test:all": "testcafe chrome:headless tc/cert/cert.js --skip-js-errors --reporter json:reports/json/regression-report.json,html:reports/html/regression-report.html",
+    "test:prod": "testcafe chrome:headless tc/cert/cert.js --skip-js-errors --reporter json:reports/json/prod-report.json,html:reports/html/prod-report.html --test-meta env=prod",
+    "test:stg": "testcafe chrome:headless tc/cert/cert.js --skip-js-errors --reporter json:reports/json/stg-report.json,html:reports/html/stg-report.html --test-meta env=stg",
+    "test:sit": "testcafe chrome:headless tc/cert/cert.js --skip-js-errors --reporter json:reports/json/sit-report.json,html:reports/html/sit-report.html --test-meta env=sit",
+    "test:dev": "testcafe chrome:headless tc/cert/cert.js --skip-js-errors --reporter json:reports/json/dev-report.json,html:reports/html/dev-report.html --test-meta env=dev"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "startTime": "2024-04-16T23:10:58.901Z",
+  "endTime": "2024-04-16T23:11:26.232Z",
+  "userAgents": [
+    "Chrome 123.0.6312.106 / Windows 10"
+  ],
+  "passed": 4,
+  "total": 6,
+  "skipped": 0,
+  "fixtures": [
+    {
+      "name": "CustomerOfferPortal : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://CustomerOfferPortalsit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 8559,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "DispatchCustomerApp : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://Selfservicesit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 4371,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "eContract : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://econtractsit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [
+            "AssertionError: Certificate issuer is not the expected value.: expected 'Amazon' to deeply equal 'GoDaddy.com, Inc.'\n\n+ expected - actual\n\n-Amazon\n+GoDaddy.com, Inc.\n\n\nBrowser: Chrome 123.0.6312.106 / Windows 10\n\n   57 |        console.log(`Valid to: ${formattedValidToDate}`);\n   58 |        \n   59 |\n   60 |        // Assert issuer is the expected value\n   61 |        const expectedIssuer = 'GoDaddy.com, Inc.';\n > 62 |        await t.expect(issuer).eql(expectedIssuer, 'Certificate issuer is not the expected value.');\n   63 |\n   64 |        // Assert valid from date\n   65 |        const expectedValidFromDate = new Date('2023-06-27T17:11:10Z').getTime();\n   66 |        await t.expect(validFromDate.getTime()).eql(expectedValidFromDate, 'Certificate valid from date does not match expected date.');\n   67 |\n\n   at <anonymous> (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:62:32)\n   at asyncGeneratorStep (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:114)\n   at _next (C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js:1:452)"
+          ],
+          "durationMs": 5620,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "RealTimeEvents : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://realtimeeventssit.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 1054,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "Retention : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "http://retentionuisit/",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [
+            "TypeError [ERR_INVALID_PROTOCOL]: Protocol \"http:\" not supported. Expected \"https:\"\n\nBrowser: Chrome 123.0.6312.106 / Windows 10"
+          ],
+          "durationMs": 948,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    },
+    {
+      "name": "On-Boarding Activation : sit - Certificate Test",
+      "path": "C:\\Users\\andre\\Documents\\GitRepos\\CertValidator\\tc\\cert\\cert.js",
+      "meta": {},
+      "tests": [
+        {
+          "name": "https://activate-qa.brinkshome.com",
+          "meta": {
+            "env": "sit"
+          },
+          "errs": [],
+          "durationMs": 4761,
+          "unstable": false,
+          "screenshotPath": null,
+          "skipped": false
+        }
+      ]
+    }
+  ],
+  "warnings": []
+}
